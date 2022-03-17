@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>My skills</title>
+</head>
+<body class="skillsBackground">
+    <div class="topMenuBlock">   
+        <div class="pageName">My skills</div>
+        <div class="dropdownMenu">
+            <div class ="menuHamburger"></div>
+            <div class = "topMenu">
+                <a href="../index.html"><div class = "topButton">General</div><div class="topButtonUnderline"></div></a>
+                <a href="education.html"><div class = "topButton">Education</div><div class="topButtonUnderline"></div></a>
+                <a href="skills.html"><div class = "topButton">Skills</div><div class="topButtonUnderline selected"></div></a>
+                <a href="hobbies.html"><div class = "topButton">Hobbies</div><div class="topButtonUnderline"></div></a>
+            </div>
+        </div>
+    </div>   
+    <div class = mainPage>
+        <div class = "information skillsTableBlock ">
+            <div class="inputForm">
+                <div class="inputBlock">
+                    <span>Skill name:</span>
+                    <input type="text" onblur="CheckSkill()" id="skill">
+                </div>            
+                <div class="inputBlock">
+                    <span>Level:</span>
+                    <input type="text" onblur="CheckLevel()" id="level">
+                </div>
+                <div class="inputBlock">
+                    <span>Remark:</span>
+                    <input type="text" onblur="CheckRemark()" id="remark">
+                </div>
+                <button onclick="AddSkill()">Add skill</button>
+                <p id="errorMassages">All fields should be correct</p>
+            </div>            
+            <table>
+                <thead>
+                    <tr>
+                        <td>№</td>
+                        <td>Skill name</td>
+                        <td>Level</td>
+                        <td>Remark</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>C#</td>
+                        <td>Middle</td>
+                        <td>good</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Html, CSS</td>
+                        <td>Middle</td>
+                        <td>good</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>JavaSkript</td>
+                        <td>Middle</td>
+                        <td>good</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sql</td>
+                        <td>Middle</td>
+                        <td>good</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>  
+    <div class="footer">
+        <span>Oleh Papenko</span>
+        <span>Email: olehpapenko.kanini@gmail.com</span>
+        <span>Phone: +380993750192</span>
+    </div>      
+    <script src="./script.js"></script>
+</body>
+</html>
